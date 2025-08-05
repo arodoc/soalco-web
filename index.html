@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SOALCO CONSTRUCTOR - App de Maquinaria Pesada</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0; padding: 0;
+            background: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        section {
+            max-width: 900px;
+            margin: 30px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        h2 {
+            color: #007bff;
+            margin-top: 0;
+        }
+        .download-buttons a {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            padding: 12px 20px;
+            margin-right: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .download-buttons a:hover {
+            background: #218838;
+        }
+        form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        form button {
+            margin-top: 15px;
+            padding: 12px 25px;
+            background: #007bff;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background: #0056b3;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 10px;
+            background: #e9ecef;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SOALCO CONSTRUCTOR</h1>
+        <p>Tu app para alquilar maquinaria pesada en construcción</p>
+    </header>
+
+    <section>
+        <h2>Conoce nuestra app</h2>
+        <p>SOALCO CONSTRUCTOR conecta ingenieros civiles, maestros de obra y albañiles con maquinaria pesada para sus proyectos de construcción de manera rápida y segura.</p>
+        <img src="https://via.placeholder.com/800x400?text=Imagen+de+la+App" alt="Imagen de la App" style="width:100%; border-radius:8px;">
+    </section>
+
+    <section>
+        <h2>Descarga la app</h2>
+        <div class="download-buttons">
+            <a href="https://play.google.com/store/apps/details?id=tu.paquete" target="_blank" rel="noopener">Google Play</a>
+            <!-- Puedes agregar botón para App Store si tienes -->
+            <!-- <a href="https://apps.apple.com/app/id123456789" target="_blank" rel="noopener" style="background:#000;">App Store</a> -->
+        </div>
+    </section>
+
+    <section>
+        <h2>Contacto</h2>
+        <p>¿Tienes preguntas o quieres más información? Escríbenos.</p>
+        <form onsubmit="enviarFormulario(event)">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required />
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="respuesta" style="color:green; margin-top:15px; display:none;">¡Gracias por contactarnos! Te responderemos pronto.</p>
+    </section>
+
+    <footer>
+        &copy; 2025 SOALCO CONSTRUCTOR. Todos los derechos reservados.
+    </footer>
+
+    <script>
+        function enviarFormulario(event) {
+            event.preventDefault();
+            // Aquí podrías conectar con un backend o servicio de email para enviar el mensaje
+            // Por ahora solo muestra mensaje de éxito
+            document.getElementById('respuesta').style.display = 'block';
+            event.target.reset();
+        }
+    </script>
+</body>
+</html>
