@@ -3,142 +3,98 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SOALCO – Alquiler de Maquinaria</title>
+  <title>SOALCO – Alquila Maquinaria Fácil</title>
   <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #f4f4f4;
-      color: #333;
-    }
-
-    header {
-      background-color: #003366;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    header img {
-      max-height: 80px;
-    }
-
-    nav {
-      background: #002244;
-      text-align: center;
-      padding: 10px 0;
-    }
-
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    h2 {
-      color: #003366;
-      margin-bottom: 10px;
-    }
-
-    .btn {
-      display: inline-block;
-      background: #FFC107;
-      color: #003366;
-      padding: 12px 20px;
-      margin: 10px 0;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .download-buttons img {
-      height: 60px;
-      margin: 10px;
-    }
-
-    .image-container {
-      text-align: center;
-      margin: 30px 0;
-    }
-
-    footer {
-      background: #003366;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-
-    @media (max-width: 600px) {
-      .download-buttons img {
-        height: 50px;
-      }
-    }
+    body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #f5f5f5; color: #333; }
+    a { text-decoration: none; }
+    header { background: #333; color: white; padding: 60px 20px; text-align: center; }
+    header h1 { margin: 0; font-size: 2.5em; }
+    header p { margin: 10px 0 20px; font-size: 1.2em; }
+    header .btn { background: #FFC107; color: black; padding: 15px 30px; font-size: 1.1em; border-radius: 5px; }
+    section { padding: 60px 20px; max-width: 1000px; margin: auto; }
+    .steps, .benefits, .screenshots, .faq { display: flex; flex-wrap: wrap; gap: 20px; }
+    .step, .benefit, .screenshot { flex: 1 1 250px; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center; }
+    .faq-item { margin-bottom: 15px; }
+    .faq-question { font-weight: bold; cursor: pointer; }
+    .faq-answer { display: none; padding-top: 5px; }
+    footer { background: #333; color: white; text-align: center; padding: 20px; }
   </style>
 </head>
 <body>
-
   <header>
-    <img src="https://i.imgur.com/H3ZmLJQ.png" alt="Logo SOALCO" />
     <h1>SOALCO</h1>
-    <p>Conectamos maquinaria con la construcción moderna</p>
+    <p>Tu plataforma de alquiler de maquinaria liviana</p>
+    <a href="#descarga" class="btn">Descarga la App</a>
   </header>
 
-  <nav>
-    <a href="#que-es">¿Qué es?</a>
-    <a href="#clientes">Clientes</a>
-    <a href="#operadores">Operadores</a>
-    <a href="#descarga">Descargar</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
-
-  <section id="que-es">
-    <h2>¿Qué es SOALCO?</h2>
-    <p>SOALCO es una plataforma móvil que conecta a operadores de maquinaria liviana con clientes del sector construcción. Desde megaproyectos hasta obras domésticas.</p>
-    <div class="image-container">
-      <img src="https://i.imgur.com/9g7BNqK.jpg" alt="Maquinaria" width="80%">
+  <section id="como-funciona">
+    <h2>¿Cómo Funciona?</h2>
+    <div class="steps">
+      <div class="step">
+        <h3>1. Regístrate</h3>
+        <p>Como cliente u operador en segundos.</p>
+      </div>
+      <div class="step">
+        <h3>2. Publica o solicita servicios</h3>
+        <p>Describe la maquinaria o el trabajo requerido.</p>
+      </div>
+      <div class="step">
+        <h3>3. Conecta y obra</h3>
+        <p>Recibe alertas o llega al trabajo.</p>
+      </div>
     </div>
   </section>
 
-  <section id="clientes">
-    <h2>Para Clientes</h2>
-    <p>¿Necesitas maquinaria como retroexcavadoras o volquetes? Encuentra operadores confiables cerca de ti con un solo clic.</p>
+  <section id="beneficios">
+    <h2>Beneficios</h2>
+    <div class="benefits">
+      <div class="benefit"><h4>Seguridad</h4><p>Verificación de usuarios y datos.</p></div>
+      <div class="benefit"><h4>Rápido</h4><p>Acceso inmediato a operadores/videos.</p></div>
+      <div class="benefit"><h4>Sin comisiones ocultas</h4><p>Solo paga si recibes alertas.</p></div>
+    </div>
   </section>
 
-  <section id="operadores">
-    <h2>Para Operadores</h2>
-    <p>¿Tienes maquinaria disponible? Regístrate, recibe alertas de clientes y gana dinero ofreciendo tus servicios.</p>
+  <section id="screenshots">
+    <h2>Capturas de la App</h2>
+    <div class="screenshots">
+      <div class="screenshot"><img src="https://i.imgur.com/tu_screenshot1.png" alt="" width="100%"></div>
+      <div class="screenshot"><img src="https://i.imgur.com/tu_screenshot2.png" alt="" width="100%"></div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <h2>Preguntas Frecuentes</h2>
+    <div class="faq">
+      <div class="faq-item">
+        <div class="faq-question">¿La app es gratuita?</div>
+        <div class="faq-answer">Sí, para clientes es gratuita. Los operadores pagan solo comisión al recibir alertas.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">¿Es segura?</div>
+        <div class="faq-answer">Sí, solicitamos datos y fotos para verificación.</div>
+      </div>
+    </div>
   </section>
 
   <section id="descarga">
     <h2>Descarga la App</h2>
-    <p>SOALCO está disponible en Google Play. Elige tu rol y descarga la app:</p>
-    <div class="download-buttons">
-      <a href="https://play.google.com/store/apps/details?id=soalco.cliente" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Cliente">
-      </a>
-      <a href="https://play.google.com/store/apps/details?id=soalco.operador" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Operador">
-      </a>
-    </div>
-  </section>
-
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <p>¿Tienes preguntas o deseas eliminar tus datos?</p>
-    <p>Escríbenos a: <a href="mailto:soalco.contacto@gmail.com">soalco.contacto@gmail.com</a></p>
-    <p><a href="https://tusitio.com/politica-de-privacidad" class="btn" target="_blank">Política de Privacidad</a></p>
+    <a href="https://play.google.com/store/apps/details?id=soalco.cliente"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" height="70" alt="Descargar Cliente"></a>
+    <a href="https://play.google.com/store/apps/details?id=soalco.operador"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" height="70" alt="Descargar Operador"></a>
   </section>
 
   <footer>
-    <p>© 2025 SOALCO – Todos los derechos reservados.</p>
+    <p>¿Tienes dudas o quieres eliminar tus datos? Escríbenos a <a href="mailto:soalco.contacto@gmail.com">soalco.contacto@gmail.com</a></p>
+    <p><a href="https://tusitio.com/politica-de-privacidad" style="color: #FFC107;">Política de Privacidad</a></p>
+    <p>© 2025 SOALCO. Todos los derechos reservados.</p>
   </footer>
 
+  <script>
+    document.querySelectorAll('.faq-question').forEach(q => {
+      q.addEventListener('click', () => {
+        const a = q.nextElementSibling;
+        a.style.display = a.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  </script>
 </body>
 </html>
