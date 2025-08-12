@@ -1,135 +1,144 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>SOALCO CONSTRUCTOR - App de Maquinaria Pesada</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0; padding: 0;
-            background: #f5f5f5;
-            color: #333;
-        }
-        header {
-            background: #007bff;
-            color: white;
-            padding: 20px 10px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-        }
-        section {
-            max-width: 900px;
-            margin: 30px auto;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-        }
-        h2 {
-            color: #007bff;
-            margin-top: 0;
-        }
-        .download-buttons a {
-            display: inline-block;
-            background: #28a745;
-            color: white;
-            padding: 12px 20px;
-            margin-right: 10px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-        .download-buttons a:hover {
-            background: #218838;
-        }
-        form label {
-            display: block;
-            margin: 10px 0 5px;
-        }
-        form input, form textarea {
-            width: 100%;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-            font-size: 16px;
-        }
-        form button {
-            margin-top: 15px;
-            padding: 12px 25px;
-            background: #007bff;
-            border: none;
-            color: white;
-            font-size: 16px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        form button:hover {
-            background: #0056b3;
-        }
-        footer {
-            text-align: center;
-            padding: 20px 10px;
-            background: #e9ecef;
-            margin-top: 30px;
-            font-size: 14px;
-            color: #666;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SOALCO – Alquiler de Maquinaria</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header img {
+      max-height: 80px;
+    }
+
+    nav {
+      background: #002244;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #003366;
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #FFC107;
+      color: #003366;
+      padding: 12px 20px;
+      margin: 10px 0;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .download-buttons img {
+      height: 60px;
+      margin: 10px;
+    }
+
+    .image-container {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    footer {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 600px) {
+      .download-buttons img {
+        height: 50px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>SOALCO CONSTRUCTOR</h1>
-        <p>Tu app para alquilar maquinaria pesada en construcción</p>
-    </header>
 
-    <section>
-        <h2>Conoce nuestra app</h2>
-        <p>SOALCO CONSTRUCTOR conecta ingenieros civiles, maestros de obra y albañiles con maquinaria pesada para sus proyectos de construcción de manera rápida y segura.</p>
-        <img src="https://via.placeholder.com/800x400?text=Imagen+de+la+App" alt="Imagen de la App" style="width:100%; border-radius:8px;">
-    </section>
+  <header>
+    <img src="https://i.imgur.com/H3ZmLJQ.png" alt="Logo SOALCO" />
+    <h1>SOALCO</h1>
+    <p>Conectamos maquinaria con la construcción moderna</p>
+  </header>
 
-    <section>
-        <h2>Descarga la app</h2>
-        <div class="download-buttons">
-            <a href="https://play.google.com/store/apps/details?id=tu.paquete" target="_blank" rel="noopener">Google Play</a>
-            <!-- Puedes agregar botón para App Store si tienes -->
-            <!-- <a href="https://apps.apple.com/app/id123456789" target="_blank" rel="noopener" style="background:#000;">App Store</a> -->
-        </div>
-    </section>
+  <nav>
+    <a href="#que-es">¿Qué es?</a>
+    <a href="#clientes">Clientes</a>
+    <a href="#operadores">Operadores</a>
+    <a href="#descarga">Descargar</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
 
-    <section>
-        <h2>Contacto</h2>
-        <p>¿Tienes preguntas o quieres más información? Escríbenos.</p>
-        <form onsubmit="enviarFormulario(event)">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required />
+  <section id="que-es">
+    <h2>¿Qué es SOALCO?</h2>
+    <p>SOALCO es una plataforma móvil que conecta a operadores de maquinaria liviana con clientes del sector construcción. Desde megaproyectos hasta obras domésticas.</p>
+    <div class="image-container">
+      <img src="https://i.imgur.com/9g7BNqK.jpg" alt="Maquinaria" width="80%">
+    </div>
+  </section>
 
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" required />
+  <section id="clientes">
+    <h2>Para Clientes</h2>
+    <p>¿Necesitas maquinaria como retroexcavadoras o volquetes? Encuentra operadores confiables cerca de ti con un solo clic.</p>
+  </section>
 
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+  <section id="operadores">
+    <h2>Para Operadores</h2>
+    <p>¿Tienes maquinaria disponible? Regístrate, recibe alertas de clientes y gana dinero ofreciendo tus servicios.</p>
+  </section>
 
-            <button type="submit">Enviar</button>
-        </form>
-        <p id="respuesta" style="color:green; margin-top:15px; display:none;">¡Gracias por contactarnos! Te responderemos pronto.</p>
-    </section>
+  <section id="descarga">
+    <h2>Descarga la App</h2>
+    <p>SOALCO está disponible en Google Play. Elige tu rol y descarga la app:</p>
+    <div class="download-buttons">
+      <a href="https://play.google.com/store/apps/details?id=soalco.cliente" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Cliente">
+      </a>
+      <a href="https://play.google.com/store/apps/details?id=soalco.operador" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Operador">
+      </a>
+    </div>
+  </section>
 
-    <footer>
-        &copy; 2025 SOALCO CONSTRUCTOR. Todos los derechos reservados.
-    </footer>
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>¿Tienes preguntas o deseas eliminar tus datos?</p>
+    <p>Escríbenos a: <a href="mailto:soalco.contacto@gmail.com">soalco.contacto@gmail.com</a></p>
+    <p><a href="https://tusitio.com/politica-de-privacidad" class="btn" target="_blank">Política de Privacidad</a></p>
+  </section>
 
-    <script>
-        function enviarFormulario(event) {
-            event.preventDefault();
-            // Aquí podrías conectar con un backend o servicio de email para enviar el mensaje
-            // Por ahora solo muestra mensaje de éxito
-            document.getElementById('respuesta').style.display = 'block';
-            event.target.reset();
-        }
-    </script>
+  <footer>
+    <p>© 2025 SOALCO – Todos los derechos reservados.</p>
+  </footer>
+
 </body>
 </html>
